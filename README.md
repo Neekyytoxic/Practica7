@@ -21,6 +21,7 @@ cd docker-practice
 # Сборка образа
 docker build -t practice-image:1.0 .
 ```
+<img width="974" height="628" alt="image" src="https://github.com/user-attachments/assets/9ff88b6e-9444-4e24-ae1e-50ddb26611e6" />
 
 
 ### Задание 1: Вывод логов в файл
@@ -41,6 +42,11 @@ cat /tmp/container_logs.txt
 # Очистка
 docker rm practice-container-1
 ```
+<img width="974" height="52" alt="image" src="https://github.com/user-attachments/assets/5b32a0f7-4c23-43de-9434-5936de8b6b4a" />
+
+
+<img width="974" height="551" alt="image" src="https://github.com/user-attachments/assets/84248b8a-5850-4543-9882-6c058d4436ac" />
+
 
 
 ### Задание 2: Проверка docker-stats
@@ -58,6 +64,10 @@ docker stats --no-stream practice-container-2 > /tmp/container_stats.txt
 # После завершения контейнера
 docker rm practice-container-2
 ```
+<img width="974" height="422" alt="image" src="https://github.com/user-attachments/assets/2778df0d-5ad0-4160-859c-0156c902e0e0" />
+
+
+<img width="974" height="197" alt="image" src="https://github.com/user-attachments/assets/ef2f4e07-52d1-44b9-97cd-47a280aeb2a6" />
 
 
 ### Задание 3: Ограничение ресурсов
@@ -79,6 +89,7 @@ docker update --memory=512m practice-limited
 docker stop practice-limited
 docker rm practice-limited
 ```
+<img width="974" height="328" alt="image" src="https://github.com/user-attachments/assets/1cc95d6d-ebc3-4807-9dae-3fd45248d390" />
 
 
 ### Задание 4: Экспорт в tar
@@ -103,6 +114,8 @@ tar -tf /tmp/container_export.tar | head -20
 docker rm practice-export
 ```
 
+<img width="974" height="537" alt="image" src="https://github.com/user-attachments/assets/29378603-096a-4425-b342-a105d4eba808" />
+
 
 ### Задание 5: Импорт из tar
 
@@ -125,6 +138,11 @@ docker stop restored-from-tar
 docker rm restored-from-tar
 docker rmi restored-practice:1.0
 ```
+<img width="974" height="351" alt="image" src="https://github.com/user-attachments/assets/76851cc4-8fe8-4470-abae-68c4d58ffeae" />
+
+
+<img width="974" height="842" alt="image" src="https://github.com/user-attachments/assets/2b65d2df-4f91-49a6-89b4-d74a744e9f50" />
+
 
 ---
 
